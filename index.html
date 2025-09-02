@@ -3,28 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Brix Explorers — LEGO Builds • Reviews • Tips</title>
-  <meta name="description" content="Brix Explorers: LEGO builds, reviews, tips, and behind‑the‑scenes. Read the blog, watch our videos, and follow along on Instagram & Facebook." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Brix Explorers — LEGO Reviews, Games, Learning & Price Insights</title>
+  <meta name="description" content="Brix Explorers explores the world of bricks — reviews, stop-motion, LEGO® game guides, learning resources, and price insights for builders and families.">
+  <link rel="canonical" href="https://www.brixexplorers.com/">
+
+  <!-- Inter + Tailwind -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src=\"https://cdn.tailwindcss.com\"></script>
-  <!-- Snipcart CSS for shopping cart -->
-  <link rel=\"stylesheet\" href=\"https://cdn.snipcart.com/themes/v3.6.0/default/snipcart.css\" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink:"#0B0D11", brand:"#FFC300" }
+        }
+      }
+    }
+  </script>
   <style>
-    :root{--brand:#FFC300;--ink:#0B0D11;--bg:#0b0d11;--muted:#A2A7B0}
-    html,body{background: var(--bg);}
     body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
-    .glass{backdrop-filter:saturate(140%) blur(8px)}
+    .glass{backdrop-filter:saturate(140%) blur(10px)}
+    .hide-scrollbar::-webkit-scrollbar{display:none}
+    .hide-scrollbar{scrollbar-width:none;-ms-overflow-style:none}
   </style>
-  <!-- Basic JSON‑LD for brand -->
+
+  <!-- Basic Organization JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Brix Explorers",
-    "url": "https://example.com",
-    "sameAs": [
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Brix Explorers",
+    "url":"https://www.brixexplorers.com",
+    "sameAs":[
       "https://www.youtube.com/@BrixExplorers",
       "https://www.instagram.com/brix_explorers/",
       "https://www.facebook.com/profile.php?id=61576699206049"
@@ -32,233 +42,252 @@
   }
   </script>
 </head>
-<body class="text-white">
-  <!-- Header -->
-<header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-black/30 bg-black/20 border-b border-white/10">
-  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <div class="w-11 h-11 rounded-2xl bg-[color:var(--brand)] grid place-items-center text-black font-extrabold">BE</div>
-      <div>
-        <h1 class="text-xl font-extrabold tracking-tight">Brix Explorers</h1>
-        <p class="text-xs text-[color:var(--muted)] leading-none">LEGO builds • reviews • tips</p>
+<body class="bg-ink text-white">
+
+  <!-- Utility bar -->
+  <div class="hidden md:block bg-black/40 text-white/80 text-sm">
+    <div class="max-w-6xl mx-auto px-5 py-2 flex items-center justify-between">
+      <div class="space-x-6">
+        <a href="mailto:hello@brixexplorers.com" class="hover:text-white">hello@brixexplorers.com</a>
+        <span>•</span>
+        <a href="#" class="hover:text-white">+64 000 0000</a>
+      </div>
+      <div class="space-x-6">
+        <a class="hover:text-white" href="https://www.youtube.com/@BrixExplorers" target="_blank" rel="noopener">YouTube</a>
+        <a class="hover:text-white" href="https://www.instagram.com/brix_explorers/" target="_blank" rel="noopener">Instagram</a>
+        <a class="hover:text-white" href="https://www.facebook.com/profile.php?id=61576699206049" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
-    <nav class="hidden md:flex items-center gap-4 text-sm">
-      <a class="hover:text-[color:var(--brand)]" href="#blog">Blog</a>
-      <a class="hover:text-[color:var(--brand)]" href="#videos">YouTube</a>
-      <a class="hover:text-[color:var(--brand)]" href="#instagram">Instagram</a>
-      <a class="hover:text-[color:var(--brand)]" href="#shop">Shop</a>
-      <a class="hover:text-[color:var(--brand)]" href="#newsletter">Subscribe</a>
-    </nav>
   </div>
-</header>
 
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-black/20 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-[color:var(--brand,#FFC300)] grid place-items-center text-black font-extrabold">BE</div>
+        <span class="text-lg font-extrabold tracking-tight">Brix Explorers</span>
+      </a>
 
-  <!-- Hero -->
-  <section class="max-w-6xl mx-auto px-5">
-    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#reviews">Reviews</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#games">Games</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#learning">Learning</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#insights">Price Insights</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#shop">Shop</a>
+        <a class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold hover:brightness-95" href="#newsletter">Subscribe</a>
+      </nav>
+
+      <button id="menuBtn" class="md:hidden px-3 py-2 rounded-lg border border-white/20">☰</button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden border-t border-white/10 bg-black/60 backdrop-blur">
+      <nav class="max-w-6xl mx-auto px-5 py-4 grid gap-3 text-sm">
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#reviews">Reviews</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#games">Games</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#learning">Learning</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#insights">Price Insights</a>
+        <a class="hover:text-[color:var(--brand,#FFC300)]" href="#shop">Shop</a>
+        <a class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold w-max" href="#newsletter">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / Banner -->
+  <section class="relative">
+    <!-- Background image (upload to /assets/img/hero-banner.jpg) -->
+    <div class="absolute inset-0 -z-10">
+      <img src="/assets/img/hero-banner.jpg" alt="Brix Explorers banner" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-ink"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Build. Play. 
-          <span class="text-[color:var(--brand)]">Explore.</span>
-        </h2>
-        <p class="mt-3 text-[color:var(--muted)]">Quick builds, deep‑dive reviews, and smart tips for LEGO fans. New videos weekly. Blog posts with parts lists, mods, and value insights.</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+          Exploring the world of <span class="text-[color:var(--brand,#FFC300)]">bricks</span>.
+        </h1>
+        <p class="mt-4 text-lg text-white/85">
+          Reviews & stop-motion, LEGO® game guides, learning resources, and price insights — curated for builders and families.
+        </p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#blog" class="px-5 py-3 rounded-2xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60">
-          <a href="#videos" class="px-5 py-3 rounded-2xl border border-white/20 hover:border-white/40 font-semibold transition-transform duration-150 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white/40">Watch on YouTube</a>
-        </div>
-        <div class="mt-6 flex items-center gap-4 text-sm">
-          <a href="https://www.youtube.com/@BrixExplorers" class="hover:text-[color:var(--brand)]" aria-label="YouTube">YouTube ↗</a>
-          <a href="https://www.instagram.com/brix_explorers/" class="hover:text-[color:var(--brand)]" aria-label="Instagram">Instagram ↗</a>
-          <a href="https://www.facebook.com/profile.php?id=61576699206049" class="hover:text-[color:var(--brand)]" aria-label="Facebook">Facebook ↗</a>
+          <a href="#reviews" class="px-5 py-3 rounded-2xl bg-[color:var(--brand,#FFC300)] text-black font-semibold hover:brightness-95">Read Reviews</a>
+          <a href="#games" class="px-5 py-3 rounded-2xl border border-white/20 hover:border-white/40 font-semibold">Explore Games</a>
         </div>
       </div>
-      <div class="glass rounded-3xl border border-white/10 bg-white/5 p-2 shadow-2xl">
-        <!-- YouTube Hero Embed: Replace with your latest video URL/ID -->
+
+      <div class="glass rounded-3xl border border-white/10 bg-white/5 p-2 shadow-[0_20px_35px_-15px_rgba(0,0,0,0.45)]">
         <div class="aspect-video rounded-2xl overflow-hidden">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID?rel=0" title="Brix Explorers on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- Optional: replace with a featured video embed -->
+          <img src="/assets/img/hero-banner.jpg" class="w-full h-full object-cover" alt="Brick cinematic">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Blog Section -->
-  <section id="blog" class="max-w-6xl mx-auto px-5 mt-16">
+  <!-- Featured row -->
+  <section class="max-w-6xl mx-auto px-5 mt-10 grid md:grid-cols-3 gap-6">
+    <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+      <p class="text-xs text-white/60">Featured Review</p>
+      <h3 class="mt-1 text-lg font-semibold">Millennium Falcon Mini — Value Score 8.6</h3>
+      <p class="mt-2 text-sm text-white/70">Quick build, display appeal, and price-per-piece breakdown.</p>
+    </article>
+    <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+      <p class="text-xs text-white/60">Featured Game</p>
+      <h3 class="mt-1 text-lg font-semibold">LEGO® Bricktales — 100% Guide</h3>
+      <p class="mt-2 text-sm text-white/70">Completion time, puzzle tips, and family play settings.</p>
+    </article>
+    <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+      <p class="text-xs text-white/60">Featured Insight</p>
+      <h3 class="mt-1 text-lg font-semibold">Top 5 Retiring Sets — 2025</h3>
+      <p class="mt-2 text-sm text-white/70">Where value is trending and how to spot real deals.</p>
+    </article>
+  </section>
+
+  <!-- Reviews scroller -->
+  <section id="reviews" class="max-w-6xl mx-auto px-5 mt-16">
     <div class="flex items-end justify-between">
-      <h3 class="text-2xl font-bold">Latest on the Blog</h3>
-      <a href="/blog" class="text-sm text-[color:var(--muted)] hover:text-[color:var(--brand)]">View all →</a>
+      <h3 class="text-2xl font-bold">Latest Reviews</h3>
+      <a href="/blog" class="text-sm text-white/60 hover:text-[color:var(--brand,#FFC300)]">View all →</a>
     </div>
-    <!-- If you don't have a CMS yet, swap these cards manually. Later: wire to Notion/Ghost/WordPress API. -->
+    <div class="relative mt-6">
+      <button aria-label="Left" class="absolute -left-3 top-1/2 -translate-y-1/2 z-10 rounded-full border border-white/20 bg-black/40 px-2 py-2" onclick="scrollRow('rowTop',-1)">‹</button>
+      <button aria-label="Right" class="absolute -right-3 top-1/2 -translate-y-1/2 z-10 rounded-full border border-white/20 bg-black/40 px-2 py-2" onclick="scrollRow('rowTop',1)">›</button>
+      <div id="rowTop" class="overflow-x-auto hide-scrollbar scroll-smooth snap-x snap-mandatory pr-2">
+        <div class="grid grid-flow-col auto-cols-[minmax(220px,1fr)] gap-4">
+          <!-- Duplicate and replace with real posts -->
+          <a href="/blog/posts/2025-09-02-star-wars-logo-review.html" class="snap-start rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+            <img src="/assets/img/star-wars-logo-hero.jpg" class="w-full h-36 object-cover" alt="Star Wars Logo">
+            <div class="p-3">
+              <h4 class="text-sm font-semibold leading-tight">Star Wars Logo — Quick Build</h4>
+              <p class="text-xs text-white/60 mt-1">Build tips & parts list</p>
+            </div>
+          </a>
+          <a href="#" class="snap-start rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+            <img src="https://images.unsplash.com/photo-1600195078184-c8b9c8173d9f?q=80&w=1200&auto=format&fit=crop" class="w-full h-36 object-cover" alt="Review 2">
+            <div class="p-3">
+              <h4 class="text-sm font-semibold leading-tight">Millennium Falcon Mini — Review</h4>
+              <p class="text-xs text-white/60 mt-1">Value score + mods</p>
+            </div>
+          </a>
+          <a href="#" class="snap-start rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+            <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64243a?q=80&w=1200&auto=format&fit=crop" class="w-full h-36 object-cover" alt="Review 3">
+            <div class="p-3">
+              <h4 class="text-sm font-semibold leading-tight">City Fire Truck — Review</h4>
+              <p class="text-xs text-white/60 mt-1">Build time test</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games & Learning -->
+  <section id="games" class="max-w-6xl mx-auto px-5 mt-16 grid md:grid-cols-2 gap-6">
+    <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-6 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+      <h3 class="text-2xl font-bold">Games</h3>
+      <p class="mt-2 text-white/70">Guides, completion times, and family-friendly settings for popular LEGO® games.</p>
+      <a class="mt-4 inline-block px-5 py-3 rounded-2xl bg-[color:var(--brand,#FFC300)] text-black font-semibold hover:brightness-95" href="#">Browse game guides</a>
+    </article>
+    <article id="learning" class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-6 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+      <h3 class="text-2xl font-bold">Learning</h3>
+      <p class="mt-2 text-white/70">Stop motion tutorials, camera basics, LEGO Studio, and fun STEM activities for kids.</p>
+      <a class="mt-4 inline-block px-5 py-3 rounded-2xl border border-white/20 hover:border-white/40 font-semibold" href="#">Start learning</a>
+    </article>
+  </section>
+
+  <!-- Price Insights -->
+  <section id="insights" class="max-w-6xl mx-auto px-5 mt-16">
+    <div class="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+      <div class="md:flex md:items-center md:justify-between">
+        <div>
+          <h3 class="text-2xl font-bold">Price Insights</h3>
+          <p class="mt-2 text-white/70 max-w-2xl">Price-per-piece trackers, value scores, and retirement watchlists so you can buy smart.</p>
+        </div>
+        <a class="mt-4 md:mt-0 inline-block px-5 py-3 rounded-2xl bg-[color:var(--brand,#FFC300)] text-black font-semibold hover:brightness-95" href="#">See insights</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop preview -->
+  <section id="shop" class="max-w-6xl mx-auto px-5 mt-16">
+    <div class="flex items-end justify-between">
+      <h3 class="text-2xl font-bold">Shop</h3>
+      <a href="#" class="text-sm text-white/60 hover:text-[color:var(--brand,#FFC300)]">View all →</a>
+    </div>
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30">
-        <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f72?q=80&w=1200&auto=format&fit=crop" alt="LEGO set build" class="w-full h-40 object-cover"/>
-        <div class="p-4">
-          <a href="#" class="block text-lg font-semibold hover:text-[color:var(--brand)]">Review: LEGO Star Wars Logo Quick Build</a>
-          <p class="mt-1 text-sm text-[color:var(--muted)]">Build steps, camera angles, and parts tips for smooth stop‑motion.</p>
-        </div>
-      </article>
-      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30">
-        <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64243a?q=80&w=1200&auto=format&fit=crop" alt="LEGO parts" class="w-full h-40 object-cover"/>
-        <div class="p-4">
-          <a href="#" class="block text-lg font-semibold hover:text-[color:var(--brand)]">Value Check: Price‑per‑Piece & Smart Sourcing</a>
-          <p class="mt-1 text-sm text-[color:var(--muted)]">How we score value and where to find legit deals.</p>
-        </div>
-      </article>
-      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30">
-        <img src="https://images.unsplash.com/photo-1600195078184-c8b9c8173d9f?q=80&w=1200&auto=format&fit=crop" alt="LEGO display" class="w-full h-40 object-cover"/>
-        <div class="p-4">
-          <a href="#" class="block text-lg font-semibold hover:text-[color:var(--brand)]">Setup: Lighting & Backgrounds for Clean Shots</a>
-          <p class="mt-1 text-sm text-[color:var(--muted)]">Our simple tabletop rig that makes sets pop on camera.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- YouTube Section -->
-  <section id="videos" class="max-w-6xl mx-auto px-5 mt-16">
-    <div class="flex items-end justify-between">
-      <h3 class="text-2xl font-bold">Latest Videos</h3>
-      <a href="https://www.youtube.com/@BrixExplorers" class="text-sm text-[color:var(--muted)] hover:text-[color:var(--brand)]">Open channel →</a>
-    </div>
-    <!-- Playlist Embed: replace PLAYLIST_ID with your uploads playlist (or any playlist). -->
-    <div class="mt-6 grid lg:grid-cols-2 gap-6">
-      <div class="aspect-video rounded-2xl overflow-hidden border border-white/10 bg-white/5">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID" title="Brix Explorers Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-        <h4 class="font-semibold">How to set this up</h4>
-        <ol class="mt-2 list-decimal list-inside text-sm text-[color:var(--muted)] space-y-1">
-          <li>On YouTube → Your Channel → Playlists → choose your uploads playlist.</li>
-          <li>Copy the playlist ID (after <code>list=</code>) and replace <code>PLAYLIST_ID</code> above.</li>
-          <li>Replace the hero video <code>VIDEO_ID</code> at the top with your latest video ID.</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- Instagram Section -->
-  <section id="instagram" class="max-w-6xl mx-auto px-5 mt-16">
-    <div class="flex items-end justify-between">
-      <h3 class="text-2xl font-bold">Instagram</h3>
-      <a href="https://www.instagram.com/brix_explorers/" class="text-sm text-[color:var(--muted)] hover:text-[color:var(--brand)]">Follow us →</a>
-    </div>
-    <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
-      <!-- Quick static grid. Replace with real embeds later (e.g., Instagram oEmbed or a widget). -->
-      <a href="#" class="block aspect-square rounded-2xl overflow-hidden border border-white/10 bg-white/5"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=1200&auto=format&fit=crop" alt="IG 1"/></a>
-      <a href="#" class="block aspect-square rounded-2xl overflow-hidden border border-white/10 bg-white/5"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1583275477744-12b992c8855a?q=80&w=1200&auto=format&fit=crop" alt="IG 2"/></a>
-      <a href="#" class="block aspect-square rounded-2xl overflow-hidden border border-white/10 bg-white/5"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1589054309531-16bb6960b79b?q=80&w=1200&auto=format&fit=crop" alt="IG 3"/></a>
-      <a href="#" class="block aspect-square rounded-2xl overflow-hidden border border-white/10 bg-white/5"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1603509106420-9c45efb304d3?q=80&w=1200&auto=format&fit=crop" alt="IG 4"/></a>
-    </div>
-    <p class="mt-3 text-xs text-[color:var(--muted)]">Later you can replace this grid with Instagram's official oEmbed per‑post or a gallery widget.</p>
-  </section>
-
-  <!-- Shop Section -->
-  <section id=\"shop\" class=\"max-w-6xl mx-auto px-5 mt-16\">
-    <div class=\"flex items-end justify-between\">
-      <h3 class=\"text-2xl font-bold\">Shop</h3>
-      <p class=\"text-sm text-[color:var(--muted)]\">Secure checkout powered by Snipcart.</p>
-    </div>
-    <div class=\"mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6\">
-      <!-- Product: Digital PDF Instructions -->
-      <article class=\"rounded-2xl overflow-hidden border border-white/10 bg-white/5\">
-        <img src=\"https://images.unsplash.com/photo-1585366119957-e9730b6d0f72?q=80&w=1200&auto=format&fit=crop\" alt=\"Digital instructions\" class=\"w-full h-40 object-cover\"/>
-        <div class=\"p-4\">
-          <h4 class=\"text-lg font-semibold\">Star Wars Logo — PDF Instructions</h4>
-          <p class=\"mt-1 text-sm text-[color:var(--muted)]\">Step-by-step build guide. Digital download.</p>
-          <div class=\"mt-3 flex items-center justify-between\">
-            <span class=\"text-[color:var(--brand)] font-semibold\">$4.99</span>
-            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60\"
-              data-item-id=\"sw-logo-pdf\"
-              data-item-name=\"Star Wars Logo — PDF Instructions\"
-              data-item-price=\"4.99\"
-              data-item-url=\"/\"
-              data-item-description=\"Digital PDF build instructions for the Star Wars logo quick build.\">
-              Add to Cart
-            </button>
+      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+        <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f72?q=80&w=1200&auto=format&fit=crop" alt="PDF Instructions" class="w-full h-40 object-cover"/>
+        <div class="p-5">
+          <h4 class="text-lg font-semibold">PDF Instructions</h4>
+          <p class="mt-1 text-sm text-white/70">Step-by-step digital builds.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-[color:var(--brand,#FFC300)] font-semibold">$4.99</span>
+            <button class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold">Add to Cart</button>
           </div>
         </div>
       </article>
-      <!-- Product: Sticker Pack (Physical) -->
-      <article class=\"rounded-2xl overflow-hidden border border-white/10 bg-white/5\">
-        <img src=\"https://images.unsplash.com/photo-1603509106420-9c45efb304d3?q=80&w=1200&auto=format&fit=crop\" alt=\"Sticker pack\" class=\"w-full h-40 object-cover\"/>
-        <div class=\"p-4\">
-          <h4 class=\"text-lg font-semibold\">Brix Explorers Sticker Pack</h4>
-          <p class=\"mt-1 text-sm text-[color:var(--muted)]\">High‑quality vinyl stickers for laptops & bins.</p>
-          <div class=\"mt-3 flex items-center justify-between\">
-            <span class=\"text-[color:var(--brand)] font-semibold\">$6.99</span>
-            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60\"
-              data-item-id=\"be-sticker-pack\"
-              data-item-name=\"Brix Explorers Sticker Pack\"
-              data-item-price=\"6.99\"
-              data-item-url=\"/\"
-              data-item-description=\"Set of 5 vinyl stickers.\">
-              Add to Cart
-            </button>
+      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+        <img src="https://images.unsplash.com/photo-1603509106420-9c45efb304d3?q=80&w=1200&auto=format&fit=crop" alt="Sticker Pack" class="w-full h-40 object-cover"/>
+        <div class="p-5">
+          <h4 class="text-lg font-semibold">Sticker Pack</h4>
+          <p class="mt-1 text-sm text-white/70">High-quality vinyl stickers.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-[color:var(--brand,#FFC300)] font-semibold">$6.99</span>
+            <button class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold">Add to Cart</button>
           </div>
         </div>
       </article>
-      <!-- Product: MOC Kit Preorder (Example) -->
-      <article class=\"rounded-2xl overflow-hidden border border-white/10 bg-white/5\">
-        <img src=\"https://images.unsplash.com/photo-1600195078184-c8b9c8173d9f?q=80&w=1200&auto=format&fit=crop\" alt=\"MOC kit\" class=\"w-full h-40 object-cover\"/>
-        <div class=\"p-4\">
-          <h4 class=\"text-lg font-semibold\">Mini MOC Kit — Preorder</h4>
-          <p class=\"mt-1 text-sm text-[color:var(--muted)]\">Limited run. Ships in ~3–4 weeks.</p>
-          <div class=\"mt-3 flex items-center justify-between\">
-            <span class=\"text-[color:var(--brand)] font-semibold\">$24.00</span>
-            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60\"
-              data-item-id=\"mini-moc-preorder\"
-              data-item-name=\"Mini MOC Kit — Preorder\"
-              data-item-price=\"24.00\"
-              data-item-url=\"/\"
-              data-item-description=\"Limited‑run MOC parts + PDF.\">
-              Add to Cart
-            </button>
+      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+        <img src="https://images.unsplash.com/photo-1600195078184-c8b9c8173d9f?q=80&w=1200&auto=format&fit=crop" alt="Mini MOC Kit" class="w-full h-40 object-cover"/>
+        <div class="p-5">
+          <h4 class="text-lg font-semibold">Mini MOC Kit</h4>
+          <p class="mt-1 text-sm text-white/70">Limited-run parts + PDF.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-[color:var(--brand,#FFC300)] font-semibold">$24.00</span>
+            <button class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold">Add to Cart</button>
           </div>
         </div>
       </article>
     </div>
-    <p class=\"mt-3 text-xs text-[color:var(--muted)]\">LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</p>
   </section>
 
-  <!-- Newsletter / CTA -->
+  <!-- Newsletter -->
   <section id="newsletter" class="max-w-6xl mx-auto px-5 mt-16">
     <div class="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-10 grid md:grid-cols-2 gap-6 items-center">
       <div>
         <h3 class="text-2xl font-bold">Get new posts & deals first</h3>
-        <p class="mt-1 text-[color:var(--muted)]">Subscribe for build guides, parts lists, and legit discounts. No spam, unsubscribe anytime.</p>
+        <p class="mt-1 text-white/70">Subscribe for build guides, game tips, and legit discounts. No spam.</p>
       </div>
-      <!-- Replace action with your email marketing form (Mailchimp, Beehiiv, ConvertKit, etc.) -->
-      <form class="flex gap-3" action="#" method="post" onsubmit="alert('Hook this form to your email platform.');return false;">
+      <form class="flex gap-3" action="#" onsubmit="alert('Connect this to your email platform.');return false;">
         <input class="flex-1 px-4 py-3 rounded-2xl bg-black/40 border border-white/10 placeholder-white/40" type="email" placeholder="you@example.com" required />
-        <button class="px-5 py-3 rounded-2xl bg-[color:var(--brand)] text-black font-semibold" type="submit">Subscribe</button>
+        <button class="px-5 py-3 rounded-2xl bg-[color:var(--brand,#FFC300)] text-black font-semibold" type="submit">Subscribe</button>
       </form>
     </div>
   </section>
 
-  <!-- Monetization & Disclosure (placeholder) -->
-  <section class="max-w-6xl mx-auto px-5 mt-16">
-    <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-      <h4 class="font-semibold">Support the Channel</h4>
-      <p class="mt-2 text-sm text-[color:var(--muted)]">We use affiliate links where possible. As an Amazon Associate we may earn from qualifying purchases. Prices remain the same for you.</p>
-      <!-- Placeholder for AdSense unit: replace with your script + ad unit when approved. -->
-      <div class="mt-4 aspect-[3/1] rounded-xl border border-dashed border-white/20 grid place-items-center text-xs text-white/60">Ad space (Google AdSense)</div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="max-w-6xl mx-auto px-5 mt-16 mb-10 text-sm text-white/60">
+  <footer class="max-w-6xl mx-auto px-5 mt-16 mb-10 text-sm text-white/70">
     <div class="flex flex-wrap items-center justify-between gap-4">
       <p>© <span id="year"></span> Brix Explorers. All rights reserved.</p>
       <div class="flex gap-4">
-        <a href="#" class="hover:text-[color:var(--brand)]">Privacy</a>
-        <a href="#" class="hover:text-[color:var(--brand)]">Affiliate Disclosure</a>
-        <a href="#" class="hover:text-[color:var(--brand)]">Contact</a>
+        <a href="#" class="hover:text-[color:var(--brand,#FFC300)]">Privacy</a>
+        <a href="#" class="hover:text-[color:var(--brand,#FFC300)]">Affiliate Disclosure</a>
+        <a href="mailto:hello@brixexplorers.com" class="hover:text-[color:var(--brand,#FFC300)]">Contact</a>
       </div>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-  <!-- Snipcart cart container (replace PUBLIC_API_KEY) -->
-  <div hidden id=\"snipcart\" data-config-modal-style=\"side\" data-api-key=\"PUBLIC_API_KEY_GOES_HERE\"></div>
-  <script async src=\"https://cdn.snipcart.com/themes/v3.6.0/default/snipcart.js\"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.toggle('hidden');
+    });
+    function scrollRow(id, dir){
+      const el = document.getElementById(id); if(!el) return;
+      const amt = Math.min(900, el.clientWidth * 0.9);
+      el.scrollBy({ left: dir * amt, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
+
