@@ -7,14 +7,14 @@
   <meta name="description" content="Brix Explorers: LEGO builds, reviews, tips, and behind‑the‑scenes. Read the blog, watch our videos, and follow along on Instagram & Facebook." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script src=\"https://cdn.tailwindcss.com\"></script>
   <!-- Snipcart CSS for shopping cart -->
   <link rel=\"stylesheet\" href=\"https://cdn.snipcart.com/themes/v3.6.0/default/snipcart.css\" />
   <style>
     :root{--brand:#FFC300;--ink:#0B0D11;--bg:#0b0d11;--muted:#A2A7B0}
-    html,body{background: radial-gradient(1200px 800px at 70% -10%, #1b1e26 0%, #0b0d11 55%);}
-    body{font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+    html,body{background: var(--bg);}
+    body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
     .glass{backdrop-filter:saturate(140%) blur(8px)}
   </style>
   <!-- Basic JSON‑LD for brand -->
@@ -34,7 +34,8 @@
 </head>
 <body class="text-white">
   <!-- Header -->
-  <header class="max-w-6xl mx-auto px-5 py-6 flex items-center justify-between">
+<header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-black/30 bg-black/20 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
       <div class="w-11 h-11 rounded-2xl bg-[color:var(--brand)] grid place-items-center text-black font-extrabold">BE</div>
       <div>
@@ -42,14 +43,16 @@
         <p class="text-xs text-[color:var(--muted)] leading-none">LEGO builds • reviews • tips</p>
       </div>
     </div>
-    <nav class=\"hidden md:flex items-center gap-4 text-sm\">
-      <a class=\"hover:text-[color:var(--brand)]\" href=\"#blog\">Blog</a>
-      <a class=\"hover:text-[color:var(--brand)]\" href=\"#videos\">YouTube</a>
-      <a class=\"hover:text-[color:var(--brand)]\" href=\"#instagram\">Instagram</a>
-      <a class=\"hover:text-[color:var(--brand)]\" href=\"#shop\">Shop</a>
-      <a class=\"hover:text-[color:var(--brand)]\" href=\"#newsletter\">Subscribe</a>
+    <nav class="hidden md:flex items-center gap-4 text-sm">
+      <a class="hover:text-[color:var(--brand)]" href="#blog">Blog</a>
+      <a class="hover:text-[color:var(--brand)]" href="#videos">YouTube</a>
+      <a class="hover:text-[color:var(--brand)]" href="#instagram">Instagram</a>
+      <a class="hover:text-[color:var(--brand)]" href="#shop">Shop</a>
+      <a class="hover:text-[color:var(--brand)]" href="#newsletter">Subscribe</a>
     </nav>
-  </header>
+  </div>
+</header>
+
 
   <!-- Hero -->
   <section class="max-w-6xl mx-auto px-5">
@@ -60,8 +63,8 @@
         </h2>
         <p class="mt-3 text-[color:var(--muted)]">Quick builds, deep‑dive reviews, and smart tips for LEGO fans. New videos weekly. Blog posts with parts lists, mods, and value insights.</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#blog" class="px-5 py-3 rounded-2xl bg-[color:var(--brand)] text-black font-semibold">Read the Blog</a>
-          <a href="#videos" class="px-5 py-3 rounded-2xl border border-white/20 hover:border-white/40 font-semibold">Watch on YouTube</a>
+          <a href="#blog" class="px-5 py-3 rounded-2xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60">
+          <a href="#videos" class="px-5 py-3 rounded-2xl border border-white/20 hover:border-white/40 font-semibold transition-transform duration-150 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white/40">Watch on YouTube</a>
         </div>
         <div class="mt-6 flex items-center gap-4 text-sm">
           <a href="https://www.youtube.com/@BrixExplorers" class="hover:text-[color:var(--brand)]" aria-label="YouTube">YouTube ↗</a>
@@ -86,21 +89,21 @@
     </div>
     <!-- If you don't have a CMS yet, swap these cards manually. Later: wire to Notion/Ghost/WordPress API. -->
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30">
         <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f72?q=80&w=1200&auto=format&fit=crop" alt="LEGO set build" class="w-full h-40 object-cover"/>
         <div class="p-4">
           <a href="#" class="block text-lg font-semibold hover:text-[color:var(--brand)]">Review: LEGO Star Wars Logo Quick Build</a>
           <p class="mt-1 text-sm text-[color:var(--muted)]">Build steps, camera angles, and parts tips for smooth stop‑motion.</p>
         </div>
       </article>
-      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30">
         <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64243a?q=80&w=1200&auto=format&fit=crop" alt="LEGO parts" class="w-full h-40 object-cover"/>
         <div class="p-4">
           <a href="#" class="block text-lg font-semibold hover:text-[color:var(--brand)]">Value Check: Price‑per‑Piece & Smart Sourcing</a>
           <p class="mt-1 text-sm text-[color:var(--muted)]">How we score value and where to find legit deals.</p>
         </div>
       </article>
-      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+      <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30">
         <img src="https://images.unsplash.com/photo-1600195078184-c8b9c8173d9f?q=80&w=1200&auto=format&fit=crop" alt="LEGO display" class="w-full h-40 object-cover"/>
         <div class="p-4">
           <a href="#" class="block text-lg font-semibold hover:text-[color:var(--brand)]">Setup: Lighting & Backgrounds for Clean Shots</a>
@@ -163,7 +166,7 @@
           <p class=\"mt-1 text-sm text-[color:var(--muted)]\">Step-by-step build guide. Digital download.</p>
           <div class=\"mt-3 flex items-center justify-between\">
             <span class=\"text-[color:var(--brand)] font-semibold\">$4.99</span>
-            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold\"
+            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60\"
               data-item-id=\"sw-logo-pdf\"
               data-item-name=\"Star Wars Logo — PDF Instructions\"
               data-item-price=\"4.99\"
@@ -182,7 +185,7 @@
           <p class=\"mt-1 text-sm text-[color:var(--muted)]\">High‑quality vinyl stickers for laptops & bins.</p>
           <div class=\"mt-3 flex items-center justify-between\">
             <span class=\"text-[color:var(--brand)] font-semibold\">$6.99</span>
-            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold\"
+            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60\"
               data-item-id=\"be-sticker-pack\"
               data-item-name=\"Brix Explorers Sticker Pack\"
               data-item-price=\"6.99\"
@@ -201,7 +204,7 @@
           <p class=\"mt-1 text-sm text-[color:var(--muted)]\">Limited run. Ships in ~3–4 weeks.</p>
           <div class=\"mt-3 flex items-center justify-between\">
             <span class=\"text-[color:var(--brand)] font-semibold\">$24.00</span>
-            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold\"
+            <button class=\"snipcart-add-item px-4 py-2 rounded-xl bg-[color:var(--brand)] text-black font-semibold transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]/60\"
               data-item-id=\"mini-moc-preorder\"
               data-item-name=\"Mini MOC Kit — Preorder\"
               data-item-price=\"24.00\"
