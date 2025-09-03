@@ -238,74 +238,48 @@
     </div>
   </section>
 
-  <!-- SHOP (split: Merch + LEGO affiliate) -->
-  <section id="shop" class="mt-16">
-    <!-- Merch band -->
-    <div class="border-t border-white/10 bg-brand/10">
-      <div class="max-w-6xl mx-auto px-5 py-12">
-        <div class="flex items-end justify-between">
-          <h3 class="text-2xl font-bold">Shop — Merch</h3>
-          <a href="#" class="text-sm text-white/70 hover:text-white">View all →</a>
-        </div>
-        <p class="mt-1 text-white/80">Original Brix Explorers designs: tees, stickers, prints.</p>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Example merch cards -->
-          <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-card transition">
-            <img src="https://images.unsplash.com/photo-1603509106420-9c45efb304d3?q=80&w=1200&auto=format&fit=crop" class="w-full h-44 object-cover" alt="">
-            <div class="p-5">
-              <h4 class="text-lg font-semibold">Sticker Pack</h4>
-              <p class="mt-1 text-sm text-white/70">Vinyl | weather-resistant.</p>
-              <div class="mt-3 flex items-center justify-between">
-                <span class="text-[color:var(--brand,#FFC300)] font-semibold">$6.99</span>
-                <button class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold">Add to Cart</button>
-              </div>
-            </div>
-          </article>
-          <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-card transition">
-            <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f72?q=80&w=1200&auto=format&fit=crop" class="w-full h-44 object-cover" alt="">
-            <div class="p-5">
-              <h4 class="text-lg font-semibold">PDF Instructions</h4>
-              <p class="mt-1 text-sm text-white/70">Step-by-step digital builds.</p>
-              <div class="mt-3 flex items-center justify-between">
-                <span class="text-[color:var(--brand,#FFC300)] font-semibold">$4.99</span>
-                <button class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold">Add to Cart</button>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
+  <!-- SHOP (two side-by-side tiles) -->
+<section id="shop" class="max-w-6xl mx-auto px-5 mt-16">
+  <h3 class="text-2xl font-bold">Shop</h3>
+  <p class="mt-1 text-white/80">Choose between our original merch and curated LEGO deals.</p>
 
-    <!-- LEGO affiliate band -->
-    <div class="border-t border-white/10 bg-sky/10">
-      <div class="max-w-6xl mx-auto px-5 py-12">
-        <div class="flex items-end justify-between">
-          <h3 class="text-2xl font-bold">Shop — LEGO (Affiliates)</h3>
-          <a href="#" class="text-sm text-white/70 hover:text-white">See all deals →</a>
-        </div>
-        <p class="mt-1 text-white/80">Curated sets with value notes. We may earn from qualifying purchases.</p>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Example affiliate cards -->
-          <a class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-card transition" href="#">
-            <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64243a?q=80&w=1200&auto=format&fit=crop" class="w-full h-44 object-cover" alt="">
-            <div class="p-5">
-              <h4 class="text-lg font-semibold">City Fire Truck</h4>
-              <p class="mt-1 text-sm text-white/70">Value: 8.1 — good playability.</p>
-              <span class="mt-2 inline-block text-sky font-semibold">Check price →</span>
-            </div>
-          </a>
-          <a class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:-translate-y-1 hover:shadow-card transition" href="#">
-            <img src="https://images.unsplash.com/photo-1600195078184-c8b9c8173d9f?q=80&w=1200&auto=format&fit=crop" class="w-full h-44 object-cover" alt="">
-            <div class="p-5">
-              <h4 class="text-lg font-semibold">Falcon Microfighter</h4>
-              <p class="mt-1 text-sm text-white/70">Value: 7.6 — display mini.</p>
-              <span class="mt-2 inline-block text-sky font-semibold">Check price →</span>
-            </div>
-          </a>
+  <div class="mt-6 grid md:grid-cols-2 gap-6">
+    <!-- Merch tile -->
+    <article class="rounded-2xl border border-white/10 bg-[rgba(255,195,0,0.08)] hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+      <div class="p-6">
+        <h4 class="text-xl font-bold">Merch</h4>
+        <p class="mt-2 text-white/80">Original Brix Explorers designs printed & shipped by Amazon.</p>
+        <ul class="mt-3 text-sm text-white/70 list-disc list-inside">
+          <li>Tees & hoodies</li>
+          <li>Stickers & prints</li>
+          <li>Digital PDFs</li>
+        </ul>
+        <div class="mt-5 flex gap-3">
+          <a href="/shop/#merch" class="px-4 py-2 rounded-xl bg-[color:var(--brand,#FFC300)] text-black font-semibold">Browse Merch</a>
+          <a href="https://amazon.com" target="_blank" rel="noopener" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">View on Amazon</a>
         </div>
       </div>
-    </div>
-  </section>
+    </article>
+
+    <!-- LEGO deals tile -->
+    <article class="rounded-2xl border border-white/10 bg-[rgba(59,162,255,0.10)] hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 transition">
+      <div class="p-6">
+        <h4 class="text-xl font-bold">LEGO Deals</h4>
+        <p class="mt-2 text-white/80">Curated sets with value notes & affiliate links.</p>
+        <ul class="mt-3 text-sm text-white/70 list-disc list-inside">
+          <li>Price insights</li>
+          <li>Retirement watch</li>
+          <li>Top value picks</li>
+        </ul>
+        <div class="mt-5 flex gap-3">
+          <a href="/shop/#lego" class="px-4 py-2 rounded-xl bg-[rgba(59,162,255,1)] text-black font-semibold">See Deals</a>
+          <a href="/insights" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Insights</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 
   <!-- Newsletter -->
   <section id="newsletter" class="max-w-6xl mx-auto px-5 mt-16">
