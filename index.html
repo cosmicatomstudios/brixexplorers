@@ -296,16 +296,23 @@
   </section>
 
   <!-- Footer -->
-  <footer class="max-w-6xl mx-auto px-5 mt-16 mb-10 text-sm text-white/70">
-    <div class="flex flex-wrap items-center justify-between gap-4">
-      <p>© <span id="year"></span> Brix Explorers. All rights reserved.</p>
-      <div class="flex gap-4">
-        <a href="#" class="hover:text-[color:var(--brand,#FFC300)]">Privacy</a>
-        <a href="#" class="hover:text-[color:var(--brand,#FFC300)]">Affiliate Disclosure</a>
-        <a href="mailto:hello@brixexplorers.com" class="hover:text-[color:var(--brand,#FFC300)]">Contact</a>
-      </div>
+<footer class="max-w-6xl mx-auto px-5 mt-16 mb-10 text-sm text-white/70">
+  <div class="flex flex-wrap items-center justify-between gap-4">
+    <p>© <span id="year"></span> Brix Explorers. All rights reserved.</p>
+    <div class="flex gap-4">
+      <a href="/privacy.html" class="hover:text-[color:var(--brand,#FFC300)]">Privacy</a>
+      <a href="/affiliate-disclosure.html" class="hover:text-[color:var(--brand,#FFC300)]">Affiliate Disclosure</a>
+      <a href="mailto:hello@brixexplorers.com" class="hover:text-[color:var(--brand,#FFC300)]">Contact</a>
     </div>
-  </footer>
+  </div>
+
+  <!-- LEGO trademark + independence disclaimer -->
+  <p class="text-xs text-white/50 mt-4">
+    LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize, or endorse this site. 
+    Brix Explorers is an independent channel; reviews and recommendations reflect our own builds and opinions.
+  </p>
+</footer>
+
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
