@@ -48,38 +48,320 @@ tailwind.config={theme:{extend:{colors:{ink:"#0B0D11",brand:"#FFC300",sky:"#3BA2
   </p>
 
   <!-- Grid -->
-  <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+ <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- LEGO item card (example) -->
-    <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
-      <!-- Media: use your video thumbnail, YouTube embed, or SiteStripe image -->
-      <div class="aspect-video bg-black/20">
-        <!-- Example image placeholder (replace with SiteStripe image block OR your thumbnail) -->
-        <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64243a?q=80&w=1200&auto=format&fit=crop"
-             alt="City Fire Truck" class="w-full h-full object-cover">
-        <!-- Example: To embed your video thumbnail, swap the <img> for the thumbnail and link to YouTube -->
+  <!-- 1) LEGO 30663 City Weltraum-Hoverbike -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20"
+       href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener"
+       aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg"
+           alt="LEGO 30663 City Weltraum-Hoverbike video review thumbnail"
+           class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center">
+        <span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span>
+      </span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">LEGO 30663 City Weltraum-Hoverbike</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
       </div>
-
-      <div class="p-5">
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold">City Fire Truck</h3>
-          <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
-        </div>
-        <p class="mt-1 text-sm text-white/70">Value: 8.1 — great playability and parts selection.</p>
-
-        <div class="mt-3 flex flex-wrap gap-3">
-          <a target="_blank" rel="noopener"
-             href="https://www.amazon.com/dp/ASIN_HERE/?tag=yourtag-20"
-             class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
-          <a href="/blog/posts/city-fire-truck-review.html"
-             class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
-        </div>
-
-        <p class="text-xs text-white/50 mt-3">
-          Built & reviewed by Brix Explorers. Purchases via our links support the channel.
-        </p>
+      <p class="mt-1 text-sm text-white/70">Pocket polybag with a speedy space hoverbike — quick build, great for gifts.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/3UZx9hq" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
       </div>
-    </article>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers. Purchases via our links support the channel.</p>
+    </div>
+  </article>
+
+  <!-- 2) LEGO City Spaceship and Asteroid Discovery -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20"
+       href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener"
+       aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg"
+           alt="LEGO City Spaceship and Asteroid Discovery video review thumbnail"
+           class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">LEGO City Spaceship & Asteroid Discovery</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">STEM-friendly play with a sleek ship and asteroid mission scene.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/4mPCrIy" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 3) LEGO Star Wars The Dark Falcon -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars The Dark Falcon video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">LEGO Star Wars The Dark Falcon</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">An edgy spin on a classic silhouette — bold display for Star Wars fans.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/4g7XC66" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 4) LEGO Star Wars R2-D2 -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars R2-D2 video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">LEGO Star Wars R2-D2</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Iconic astromech with clever building techniques and display presence.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/4p7sSpP" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 5) LEGO Fortnite Battle Bus -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Fortnite Battle Bus video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">LEGO Fortnite Battle Bus</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Vibrant build with gamer appeal — a playful centerpiece model.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/481h1Dv" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 6) LEGO Art The Milky Way Galaxy -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Art The Milky Way Galaxy video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">LEGO Art: The Milky Way Galaxy</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Striking wall art with a relaxing, mosaic-style build session.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/3Vy8alk" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 7) Ahsoka's Jedi Interceptor -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars: The Clone Wars Ahsoka's Jedi Interceptor video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Ahsoka's Jedi Interceptor</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Sleek starfighter with standout minifig appeal for Clone Wars fans.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/47svacK" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 8) Imperial Star Destroyer -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars Imperial Star Destroyer video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Imperial Star Destroyer</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Massive display ship — a centerpiece build for dedicated collectors.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/460aoig" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 9) Hogwarts Castle and Grounds -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Harry Potter Hogwarts Castle and Grounds video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Hogwarts Castle & Grounds</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Micro-scale magic with tons of recognizable details for display.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/4lWLy8M" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 10) LOTR Barad-dûr -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Icons Lord of the Rings Barad-dûr video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Icons: LOTR Barad-dûr</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Towering presence with dark drama — a statement display piece.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/3VyB052" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 11) Brick-Built Star Wars Logo -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars Brick-Built Star Wars Logo video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Brick-Built Star Wars Logo</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Minimalist build — perfect backdrop for a themed shelf.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/3V22TSX" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 12) C-3PO -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars C-3PO video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Star Wars C-3PO</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Shiny protocol droid with expressive shaping and display stand.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/4nbEuWS" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 13) Paz Vizsla & Moff Gideon Battle -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars Paz Vizsla & Moff Gideon Battle video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Paz Vizsla & Moff Gideon Battle</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Action-packed minifig showdown from The Mandalorian.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/4p7wgkm" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 14) Death Trooper & Night Trooper Battle -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Star Wars Death Trooper & Night Trooper Battle video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Death Trooper & Night Trooper Battle</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Trooper pack with dark army vibes — great for army building.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/41Am1ez" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+  <!-- 15) Darth Maul's Sith Infiltrator -->
+  <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:shadow-card">
+    <a class="group relative block aspect-video bg-black/20" href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" aria-label="Watch our review video on YouTube">
+      <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/hqdefault.jpg" alt="LEGO Darth Maul's Sith Infiltrator video review thumbnail" class="w-full h-full object-cover">
+      <span class="absolute inset-0 grid place-items-center"><span class="rounded-full bg-black/60 px-5 py-3 text-white font-semibold group-hover:bg-black/70 transition">▶ Watch Video</span></span>
+    </a>
+    <div class="p-5">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-lg font-semibold">Darth Maul's Sith Infiltrator</h3>
+        <span class="text-[10px] uppercase tracking-wide px-2 py-1 rounded bg-white/10">Independent Review</span>
+      </div>
+      <p class="mt-1 text-sm text-white/70">Menacing ship with sleek lines — iconic Phantom Menace chase.</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a target="_blank" rel="noopener" href="https://amzn.to/45LfxvQ" class="px-4 py-2 rounded-xl bg-sky text-black font-semibold">Check Price on Amazon</a>
+        <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40 font-semibold">Read Our Review</a>
+      </div>
+      <p class="text-xs text-white/50 mt-3">Built & reviewed by Brix Explorers.</p>
+    </div>
+  </article>
+
+</div>
+
 
     <!-- Duplicate cards with your real content -->
   </div>
